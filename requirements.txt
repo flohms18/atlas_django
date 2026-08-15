@@ -1,0 +1,4 @@
+Django==6.0.7
+django-tailwind==4.5.0
+django-tiptap==0.0.18
+django-tinymce==5.0.0

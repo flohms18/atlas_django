@@ -40,9 +40,25 @@ INSTALLED_APPS = [
     'webapp',
     'tailwind',
     'theme',
+    'tinymce',
 ]
 
+
+
 TAILWIND_APP_NAME = 'theme'
+
+
+TINYMCE_DEFAULT_CONFIG = {
+    'width': '100%',
+    'height': 600,
+    'menubar': True,
+    'plugins': 'advlist autolink lists link image charmap print preview anchor '
+               'searchreplace visualblocks code fullscreen '
+               'insertdatetime media table paste code help wordcount',
+    'toolbar': 'undo redo | formatselect | bold italic backcolor | '
+               'alignleft aligncenter alignright alignjustify | '
+               'bullist numlist outdent indent | removeformat | help | code fullscreen',
+}
 
 
 MIDDLEWARE = [

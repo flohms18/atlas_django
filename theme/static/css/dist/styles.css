@@ -15,16 +15,17 @@
     --text-base: 1rem;
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
     --font-weight-semibold: 600;
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-dark-brand: #111111;
+    --color-white-brand: #F5F5F5;
     --color-blue-brand: #4C6EF5;
     --font-display: "Jetbrains Regular";
   }
@@ -246,15 +247,24 @@
   .inline-flex {
     display: inline-flex;
   }
+  .table {
+    display: table;
+  }
   .size-6 {
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
+  }
+  .h-screen {
+    height: 100vh;
   }
   .min-h-screen {
     min-height: 100vh;
   }
   .w-full {
     width: 100%;
+  }
+  .w-screen {
+    width: 100vw;
   }
   .flex-1 {
     flex: 1;
@@ -325,12 +335,19 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
+  .text-center {
+    text-align: center;
+  }
   .font-display {
     font-family: var(--font-display);
   }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-8xl {
+    font-size: var(--text-8xl);
+    line-height: var(--tw-leading, var(--text-8xl--line-height));
   }
   .text-base\/7 {
     font-size: var(--text-base);
@@ -344,16 +361,18 @@
     font-size: var(--text-sm);
     line-height: calc(var(--spacing) * 6);
   }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
   .text-blue-brand {
     color: var(--color-blue-brand);
+  }
+  .text-white-brand {
+    color: var(--color-white-brand);
+  }
+  .italic {
+    font-style: italic;
   }
   .backdrop\:bg-transparent {
     &::backdrop {
