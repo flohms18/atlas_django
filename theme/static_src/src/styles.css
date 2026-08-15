@@ -10,6 +10,16 @@
 @source "../../../**/*.{html,py,js}";
 
 
+@font-face {
+  font-family: "Jetbrains Regular";
+  font-style: normal;
+  src: url("../../fonts/jetbrains-mono/JetBrainsMono-Regular.woff2") format("woff2"),
+       url("../../fonts/jetbrains-mono/JetBrainsMono-Regular.ttf") format("truetype");
+}
+
 @theme {
-  --color-dark-brand: #111111;
+  --color-dark-brand : #111111;
+  --color-white-brand : #F5F5F5;
+  --color-blue-brand : #4C6EF5;
+  --font-display : "Jetbrains Regular";
 }
