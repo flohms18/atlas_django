@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}{{ post.title }} - Atlas{% endblock %}
+
+{% block content %}
+<section>
+    <div class="mx-auto max-w-5xl px-6 py-24 lg:px-8">
+        <a href="{% url 'home' %}" class="font-display text-sm text-blue-brand hover:underline">&larr; Retour</a>
+
+        <h1 class="font-display mt-6 text-4xl font-semibold text-white-brand">{{ post.title }}</h1>
+        <p class="mt-2 text-sm text-gray-400">{{ post.published_date }}</p>
+
+        {% if post.tags.all %}
+        <div class="mt-2 flex flex-wrap gap-2">
+            {% for tag in post.tags.all %}
+            <span class="rounded-md bg-blue-brand/10 px-3 py-1 text-sm text-blue-brand">{{ tag.name }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="font-display mt-8 text-white-brand">
+            {{ post.content|safe }}
+        </div>
+    </div>
+</section>
+{% endblock %}
