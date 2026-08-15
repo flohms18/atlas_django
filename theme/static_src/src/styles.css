@@ -8,3 +8,8 @@
   * the scope of this path.
   */
 @source "../../../**/*.{html,py,js}";
+
+
+@theme {
+  --color-dark-brand: #111111;
+}
