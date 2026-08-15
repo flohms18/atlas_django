@@ -11,16 +11,17 @@
         {% tailwind_css %}
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
-    <body class="flex min-h-screen flex-col bg-dark-brand">
-        <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+    <body class="flex min-h-screen flex-col">
+        
+        
+            {% include 'header.html' %} 
         
 
         <main class="flex-1">
             {% block content %}{% endblock %}
         </main>
 
-
+            {% include 'footer.html' %} 
         <script src="{% static 'js/scroll-reveal.js' %}" defer></script>
     </body>
 </html>
