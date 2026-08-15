@@ -17,9 +17,17 @@
        url("../../fonts/jetbrains-mono/JetBrainsMono-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/IBM_Plex_Sans/static/IBMPlexSans-Regular.ttf") format("truetype");
+}
+
 @theme {
   --color-dark-brand : #111111;
   --color-white-brand : #F5F5F5;
   --color-blue-brand : #4C6EF5;
   --font-display : "Jetbrains Regular";
+  --font-ibm : "IBM Plex Sans", sans-serif;
 }
