@@ -16,3 +16,6 @@ class Post(models.Model):
     content = HTMLField()
     published_date = models.DateField()
     tags = models.ManyToManyField(Tag, related_name="tags", blank=True)
+
+    def __str__(self):
+                return self.title
