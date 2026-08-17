@@ -15,6 +15,7 @@ Jinja2==3.1.6
 load-dotenv==0.1.0
 markdown-it-py==4.2.0
 MarkupSafe==3.0.3
+mysqlclient==2.2.8
 mdurl==0.1.2
 Pygments==2.20.0
 pytailwindcss==0.3.1
