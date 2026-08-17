@@ -13,6 +13,6 @@ def home(request):
     return render(request, 'home.html', {'page_obj': page_obj})
 
 
-def article(request, slug):
+def post(request, slug):
     post = get_object_or_404(Post, slug=slug)
-    return render(request, 'article.html', {'post': post})
+    return render(request, 'post.html', {'post': post})

@@ -30,6 +30,18 @@
   --color-blue-brand : #4C6EF5;
   --font-display : "Jetbrains Regular";
   --font-ibm : "IBM Plex Sans", sans-serif;
+  --animate-marquee : marquee 25s linear infinite;
+  --animate-marquee2 : marquee2 25s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes marquee2 {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0%); }
 }
 
 /* Restyle rich-text HTML coming from TinyMCE, since Tailwind's preflight
